@@ -1,0 +1,9 @@
+{
+  "name": "el-reto-de-las-canicas",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Juego educativo de probabilidad con canicas rojas y azules.",
+  "scripts": {
+    "test": "node --test"
+  }
+}

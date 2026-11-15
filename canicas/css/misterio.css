@@ -1,0 +1,28 @@
+/* Tema nocturno: se carga después de styles.css y solo redefine variables y las piezas de la escena. */
+:root {
+  --background: #0c0916; --foreground: #ebe3cf; --muted: #a095b2; --surface: #16112a; --border: #2d2548;
+  --primary: #d6af5c; --primary-light: #261d3d; --navy: #0c0916; --green: #86c9a0; --green-light: #1a2a27;
+  --red: #d8434d; --red-light: #331a2b; --blue: #4a74e0; --gold: #d6af5c; --shadow: 0 16px 44px #000a;
+  --font: 'Karla', system-ui, sans-serif; --display: 'IM Fell English', Georgia, serif;
+}
+body { background: radial-gradient(ellipse at 50% -10%, #241a45 0%, var(--background) 55%); background-attachment: fixed; }
+h1 { font-weight: 400; letter-spacing: 0; }
+.brand-title { font-size: 19px; }
+.eyebrow:before { display: none; }
+/* La escena: una bolsa en la penumbra. Las canicas sueltas se ocultan para no delatar los colores. */
+.scene { background: radial-gradient(ellipse at 50% 25%, #3a2b63 0%, #170f2c 60%, #0c0916 100%); border: 1px solid var(--border); }
+.scene-floor { background: #000a; }
+.loose { display: none; }
+.bag { background: linear-gradient(160deg, #3b2a1f, #1c120d); box-shadow: 0 0 46px #d6af5c33, inset 0 0 22px #000a; }
+.bag:before, .bag:after { background: #2a1c13; }
+.bag-label { color: var(--gold); font-family: var(--display); font-size: 38px; text-shadow: 0 0 18px #d6af5c99; }
+.bag-count { position: absolute; left: 0; right: 0; bottom: 12px; text-align: center; font-size: 12px; color: var(--muted); }
+.drawing .bag { animation: shake .5s infinite; }
+.tip.locked { border-style: dashed; }
+.guess { display: grid; gap: 12px; margin: 18px 0; }
+.guess input[type=range] { width: 100%; accent-color: var(--gold); }
+.guess output { font-size: 15px; }
+.hint { display: block; margin-top: 6px; color: var(--muted); font-size: 11px; }
+.btn.primary:hover { filter: brightness(1.1); }
+
+.mode-random .manual-only, .mode-manual .random-only { display: none; }

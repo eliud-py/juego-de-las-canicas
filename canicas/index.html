@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>El misterio de las canicas</title>
+<meta name="description" content="Un juego de misterio para aprender probabilidad: saca canicas de una bolsa sellada y descubre qué esconde.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=Karla:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/misterio.css">
+</head>
+<body>
+<header>
+  <div class="topbar">
+    <a class="brand" href="#inicio" data-view="inicio" aria-label="Inicio">
+      <div class="brand-icon"><i class="marble red"></i><i class="marble blue"></i></div>
+      <div>
+        <div class="brand-title">El misterio de las canicas</div>
+        <div class="brand-sub">Lo que no se ve también cuenta.</div>
+      </div>
+    </a>
+    <nav aria-label="Menú principal">
+      <button class="nav-btn active" data-view="inicio">Inicio</button>
+      <button class="nav-btn" data-view="como">Cómo jugar</button>
+      <button class="nav-btn" data-view="config">Preparar bolsa</button>
+      <button class="nav-btn" data-view="stats">Libreta</button>
+      <button class="nav-btn" data-view="formulas">Probabilidad</button>
+      <button class="nav-btn" data-view="results">Resultados</button>
+    </nav>
+  </div>
+</header>
+
+<main id="app"></main>
+<noscript><p class="noscript">Este juego necesita JavaScript activado para funcionar.</p></noscript>
+<div id="live" class="sr-only" aria-live="polite" aria-atomic="true"></div>
+
+<footer><span>El misterio de las canicas</span><span>Hecho para mentes curiosas</span></footer>
+
+<!-- Scripts clásicos (sin módulos) para que funcione abriendo index.html directamente. El orden importa. -->
+<script src="js/math.js"></script>
+<script src="js/game.js"></script>
+<script src="js/store.js"></script>
+<script src="js/views/shared.js"></script>
+<script src="js/views/play.js"></script>
+<script src="js/views/config.js"></script>
+<script src="js/views/pages.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
